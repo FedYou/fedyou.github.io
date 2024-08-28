@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import { createHtmlPlugin } from "vite-plugin-html";
 export default defineConfig({
-  base: "/FedYou.github.io",
+  base: "/",
   plugins: [
     createHtmlPlugin({
       minify: true,
