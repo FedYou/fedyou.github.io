@@ -1,0 +1,15 @@
+img.cover {
+  object-fit: cover;
+}
+.radius-50 {
+  border-radius: 50%;
+}
+.box-glow-10 {
+  --in: 10px;
+}
+.box-glow-30 {
+  --in: 30px;
+}
+.box-glow {
+  box-shadow: 0 0 var(--in) var(--box-glow-color);
+}

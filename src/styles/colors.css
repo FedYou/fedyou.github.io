@@ -1,0 +1,18 @@
+:root {
+  --color-accent: #f29718;
+  --color-bg: #0b0e14;
+  --color-fg: #bfbab0;
+  --color-ui: #475259;
+  --color-tag: #39bae6;
+  --color-func: #ffb454;
+  --color-entity: #59c2ff;
+  --color-string: #c2d94c;
+  --color-regexp: #95e6cb;
+  --color-markup: #f07178;
+  --color-keyword: #ff7733;
+  --color-special: #e6b673;
+  --color-comment: #5c6773;
+  --color-constant: #ffee99;
+  --color-operator: #f29668;
+  --color-error: #ff3333;
+}
