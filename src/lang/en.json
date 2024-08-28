@@ -1,4 +1,6 @@
 {
   "profile.name": "@FedYou",
-  "profile.description": "Web developer and add-ons creator for Minecraft Bedrock Edition"
+  "profile.description": "Web developer and add-ons creator for Minecraft Bedrock Edition",
+  "title.projects": "Projects",
+  "title.project.bedcli": "BedCli"
 }
