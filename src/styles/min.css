@@ -13,3 +13,10 @@ img.cover {
 .box-glow {
   box-shadow: 0 0 var(--in) var(--box-glow-color);
 }
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  text-overflow: ellipsis;
+  text-align: center;
+}
