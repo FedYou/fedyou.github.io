@@ -17,7 +17,7 @@ body {
   background: var(--color-bg);
   grid-template-rows: 35px 1fr;
   justify-items: center;
-  min-height: 100vh;
+  min-height: 100vw;
 }
 main {
   width: 100%;
