@@ -1,11 +1,11 @@
 const WIDTH = document.body.offsetWidth;
 const HEIGHT = document.body.offsetHeight;
-const STARS = 400;
+const STARS = 200;
 const cont = document.getElementById("stars.main");
 function randomPosition() {
   return {
-    x: Math.random() * HEIGHT,
-    y: Math.random() * WIDTH,
+    x: Math.random() * WIDTH,
+    y: Math.random() * HEIGHT,
   };
 }
 
