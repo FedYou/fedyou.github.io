@@ -19,11 +19,14 @@
 .profile.picture.main {
   grid-column: 1;
   grid-row: span 4;
+  padding: 4px;
+  background: var(--bg0_s);
 }
 .profile.picture {
   width: var(--picture-size);
   height: var(--picture-size);
   user-select: none;
+  border: 2px solid var(--bg0_h);
 }
 
 .profile.name {
