@@ -1,6 +1,6 @@
 const WIDTH = document.body.offsetWidth
 const HEIGHT = document.body.offsetHeight
-const STARS = 200
+const STARS = WIDTH < 550 ? 300 : 600
 const WORDS =
   `JSON,Js,Ts,break,case,catch,class,const,continue,debugger,default,delete,do,else,enum,export,extends,false,finally,for,function,if,import,in,instanceof,new,null,return,super,switch,this,throw,true,try,typeof,var,void,while,with,yield,await,async,let,static,implements,interface,package,private,protected,public,arguments,eval,of`.split(
     ','
