@@ -32,21 +32,32 @@ main {
   background: var(--bg-opacity);
 }
 header {
+  --size: 35px;
   display: grid;
   justify-items: right !important;
+  place-content: right;
+  gap: 10px;
+  grid-template-rows: 1;
+  grid-template-columns: repeat(auto-fill, var(--size));
   width: 100%;
   padding: 0 10px;
-  --size: 35px;
   z-index: 1;
 }
 header a {
   width: var(--size);
   height: var(--size);
-  border-radius: 30px;
+  background: var(--bg);
+  border: 2px solid var(--bg0_s);
+  box-shadow: 4px 4px var(--bg0_h);
+  transition: box-shadow 0.1s ease-in-out, transform 0.2s ease-in-out;
+}
+header a:hover {
+  box-shadow: 0 0 var(--bg0_s);
+  transform: translateY(4px) translateX(4px);
 }
 header a > svg {
-  width: var(--size);
-  height: var(--size);
+  width: calc(var(--size) - 4px);
+  height: calc(var(--size) - 4px);
   fill: var(--fg2);
 }
 .line.title {
