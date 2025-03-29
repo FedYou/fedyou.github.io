@@ -52,6 +52,12 @@
         </svg>
       </a>
     </header>
+    <!-- Get Width Header -->
+    <script>
+      const header = document.querySelector('header')
+      const elementsCount = header.childElementCount + 1
+      header.style.width = `${elementsCount * 35 + elementsCount + 15}px`
+    </script>
     <main>
       <div class="profile main">
         <div class="profile picture main">
