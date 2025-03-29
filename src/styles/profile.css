@@ -19,14 +19,24 @@
 .profile.picture.main {
   grid-column: 1;
   grid-row: span 4;
-  padding: 4px;
+  padding: 6px;
   background: var(--bg0_s);
 }
-.profile.picture {
+.profile.picture.main,
+.profile.picture.content {
+  width: var(--picture-size);
+  height: var(--picture-size);
+  border: 2px solid var(--bg0_h);
+}
+.profile.picture.content {
   width: var(--picture-size);
   height: var(--picture-size);
   user-select: none;
-  border: 2px solid var(--bg0_h);
+  cursor: pointer;
+  transition: margin 0.2s ease-in-out;
+}
+.profile.profile.main:hover > .profile.picture.content {
+  margin: -4px;
 }
 
 .profile.name {
