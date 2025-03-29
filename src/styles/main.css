@@ -1,6 +1,7 @@
 @import url(fonts.css);
 @import url(colors.css);
 @import url(min.css);
+@import url(loading-screen.css);
 @import url(profile.css);
 @import url(grid.css);
 * {
