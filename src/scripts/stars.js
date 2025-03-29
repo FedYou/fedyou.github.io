@@ -8,6 +8,25 @@ const WORDS =
 let MAX_WORDS = 20
 let WORDS_COUNT = 0
 const CHARS = `{}[]();:.,+-*/%&|^!~=<>?"'\\\`@#<>?:&|!`.split('')
+const COLORS = [
+  'fg4',
+  'red',
+  'green',
+  'yellow',
+  'blue',
+  'purple',
+  'aqua',
+  'gray',
+  'orange',
+  'bright-red',
+  'bright-green',
+  'bright-yellow',
+  'bright-blue',
+  'bright-purple',
+  'bright-aqua',
+  'bright-gray',
+  'bright-orange'
+]
 const cont = document.getElementById('stars.main')
 function randomPosition() {
   return {
@@ -31,11 +50,16 @@ function randomContent() {
   }
   return randomChar()
 }
+function randomColor() {
+  const index = Math.floor(Math.random() * COLORS.length)
+  return COLORS[index]
+}
 
 function addStar({ x, y }) {
   const star = document.createElement('div')
   star.textContent = randomContent()
   star.classList.add('star')
+  star.style.color = `var(--${randomColor()})`
   star.style.animationDuration = 4 + Math.random() * 20 + 's'
   if (Math.round(Math.random() * 1) === 1) {
     star.style.left = x + 'px'

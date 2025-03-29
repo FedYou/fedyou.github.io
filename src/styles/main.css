@@ -62,9 +62,7 @@ div.star {
   animation: infinite;
   animation-name: flicker;
   animation-timing-function: ease-in-out;
-  /* box-shadow: 0 0 10px lightblue; */
   user-select: none;
-  color: var(--fg4);
 }
 div.stars.main {
   top: 0;
