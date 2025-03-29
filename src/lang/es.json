@@ -2,5 +2,11 @@
   "profile.name": "@FedYou",
   "profile.description": "Desarrollador web y creador de add-ons para Minecraft Bedrock Edition",
   "title.projects": "Proyectos",
-  "title.project.bedcli": "BedCli"
+  "title.project.bedcli": "BedCli",
+  "title.project.xmlParser": "Xml Parser",
+  "title.project.youfile": "YouFile",
+  "title.project.youcache": "YouCache",
+  "title.project.youtemp": "YouTemp",
+  "title.project.player": "Player",
+  "title.project.yswipe": "YSwipe"
 }
