@@ -1,12 +1,12 @@
 @font-face {
   font-family: Virgil;
-  src: url(../font/Virgil.woff2) format("woff2");
+  src: url(../font/Virgil.woff2) format('woff2');
 }
 @font-face {
   font-family: Mojangles;
-  src: url(../font/Mojangles.ttf);
+  src: url(../font/Mojangles.woff2) format('woff2');
 }
 @font-face {
   font-family: MojanglesTen;
-  src: url(../font/MojanglesTen.ttf);
+  src: url(../font/MojanglesTen.woff2) format('woff2');
 }
