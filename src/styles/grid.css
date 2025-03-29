@@ -1,9 +1,9 @@
 .grid.main {
-  --section-size: 140px;
+  --section-size: 130px;
   display: grid;
   grid-template-columns: repeat(auto-fill, var(--section-size));
   grid-template-rows: repeat(auto-fill, var(--section-size));
-  gap: 5px;
+  gap: 10px;
   justify-content: center;
   padding: 0 10px;
 }
