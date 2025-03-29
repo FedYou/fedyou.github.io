@@ -61,10 +61,12 @@ header a > svg {
   fill: var(--fg2);
 }
 .line.title {
+  --color: var(--bright-blue);
   color: var(--bright-blue);
-  border-bottom: 2px solid;
-  margin: 10px;
+  margin: 10px 0;
   user-select: none;
+  width: 100%;
+  cursor: pointer;
 }
 div.star {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,

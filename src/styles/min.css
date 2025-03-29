@@ -1,17 +1,41 @@
 img.cover {
   object-fit: cover;
 }
-.radius-50 {
-  border-radius: 50%;
+.hover-underline-left,
+.hover-underline-right {
+  display: inline-block;
+  position: relative;
 }
-.box-glow-10 {
-  --in: 10px;
+.hover-underline-left::after,
+.hover-underline-right::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color);
+
+  transition: transform 0.25s ease-out;
 }
-.box-glow-30 {
-  --in: 30px;
+.hover-underline-left:hover::after,
+.hover-underline-right:hover::after {
+  transform: scaleX(1);
 }
-.box-glow {
-  box-shadow: 0 0 var(--in) var(--box-glow-color);
+
+.hover-underline-left::after {
+  transform-origin: bottom right;
+}
+.hover-underline-left:hover::after {
+  transform-origin: bottom left;
+}
+
+.hover-underline-right::after {
+  transform-origin: bottom left;
+}
+.hover-underline-right:hover::after {
+  transform-origin: bottom right;
 }
 .ellipsis {
   overflow: hidden;
