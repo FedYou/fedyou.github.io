@@ -6,7 +6,7 @@
     <title>FedYou</title>
     <link rel="stylesheet" href="src/styles/main.css" />
   </head>
-  <body>
+  <body data-theme="dark">
     <div class="stars main" id="stars.main"></div>
     <header>
       <a href="https://github.com/FedYou" target="_blank" class="bt">
@@ -21,23 +21,17 @@
     </header>
     <main>
       <div class="profile main">
-        <img
-          src="src/public/profile.png"
-          class="profile picture cover box-glow box-glow-10 radius-50"
-        />
+        <div class="profile picture main">
+          <img src="src/public/profile.png" class="profile picture covers" />
+        </div>
         <p class="profile name" key-lang="profile.name"></p>
         <p class="profile description" key-lang="profile.description"></p>
       </div>
-      <br />
       <div class="line title">
         <h2 key-lang="title.projects"></h2>
       </div>
       <div class="grid main">
-        <a
-          href="https://github.com/FedYou/bedcli"
-          target="_blank"
-          class="grid section main"
-        >
+        <a href="https://github.com/FedYou/bedcli" target="_blank" class="grid section main">
           <img class="cover grid section image" src="src/public/bedcli.png" />
           <p class="ellipsis" key-lang="title.project.bedcli"></p
         ></a>

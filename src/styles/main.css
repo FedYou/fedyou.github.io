@@ -10,12 +10,12 @@
   font-family: Virgil;
 }
 ::selection {
-  background: var(--color-ui);
+  background: var(--selection);
 }
 
 body {
   display: grid;
-  background: var(--color-bg);
+  background: var(--bg);
   grid-template-rows: 35px 1fr;
   justify-items: center;
   min-height: 100vh;
@@ -45,12 +45,13 @@ header a {
 header a > svg {
   width: var(--size);
   height: var(--size);
-  fill: var(--color-ui);
+  fill: var(--fg2);
 }
 .line.title {
-  color: var(--color-fg);
+  color: var(--bright-blue);
   border-bottom: 2px solid;
   margin: 10px;
+  user-select: none;
 }
 div.star {
   background-color: lightblue;
