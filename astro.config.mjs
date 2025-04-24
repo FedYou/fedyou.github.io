@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config'
 import icon from 'astro-icon'
 
 export default defineConfig({
-  build: { assets: '_assets' },
+  build: { assets: 'assets' },
   scopedStyleStrategy: 'where',
   integrations: [
     icon({
