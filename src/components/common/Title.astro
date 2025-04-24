@@ -1,0 +1,19 @@
+---
+const { title, clss = '' } = Astro.props
+---
+
+<div class={clss}>
+  <h2 key-lang="title.projects"></h2>
+</div>
+
+<style>
+  div {
+    --color: var(--bright-blue);
+    color: var(--bright-blue);
+    margin: 10px 0;
+    user-select: none;
+    width: 100%;
+    padding: 0 10px;
+    cursor: pointer;
+  }
+</style>

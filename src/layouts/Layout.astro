@@ -1,0 +1,115 @@
+---
+import theme from '../theme/theme.json'
+
+import Loading from '../components/common/Loading.astro'
+import Background from '../components/common/Background.astro'
+
+const { title } = Astro.props
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Loading />
+    <Background />
+    <slot />
+  </body>
+</html>
+
+<style define:vars={theme}></style>
+
+<style is:global>
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Virgil;
+  }
+  ::selection {
+    background: var(--selection);
+  }
+
+  body {
+    background: var(--bg);
+    min-height: 100vh;
+  }
+
+  @font-face {
+    font-family: Virgil;
+    src: url(../assets/font/Virgil.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: Mojangles;
+    src: url(../assets/font/Mojangles.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: MojanglesTen;
+    src: url(../assets/font/MojanglesTen.woff2) format('woff2');
+  }
+
+  @keyframes flicker {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  img.cover {
+    object-fit: cover;
+  }
+  .ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+
+  /* hovers */
+  .hover-underline-left,
+  .hover-underline-right {
+    display: inline-block;
+    position: relative;
+  }
+  .hover-underline-left::after,
+  .hover-underline-right::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color);
+
+    transition: transform 0.25s ease-out;
+  }
+  .hover-underline-left:hover::after,
+  .hover-underline-right:hover::after {
+    transform: scaleX(1);
+  }
+
+  .hover-underline-left::after {
+    transform-origin: bottom right;
+  }
+  .hover-underline-left:hover::after {
+    transform-origin: bottom left;
+  }
+
+  .hover-underline-right::after {
+    transform-origin: bottom left;
+  }
+  .hover-underline-right:hover::after {
+    transform-origin: bottom right;
+  }
+</style>
+<script src="../i18n/translator.ts"></script>

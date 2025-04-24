@@ -1,0 +1,29 @@
+---
+const { sizeButton } = Astro.props
+---
+
+<header id="header">
+  <slot />
+</header>
+
+<style define:vars={{ sizeButton }}>
+  header {
+    position: relative;
+    display: grid;
+    justify-items: right !important;
+    place-content: right;
+    height: 45px;
+    gap: 10px;
+    grid-template-rows: 1;
+    grid-template-columns: repeat(auto-fill, var(--sizeButton));
+    padding: 5px 10px;
+    margin: 0 auto;
+    z-index: 1;
+  }
+</style>
+
+<script>
+  const header = document.getElementById('header') as HTMLElement
+  const elementsCount = header.childElementCount + 1
+  header.style.width = `${elementsCount * 35 + elementsCount + 15}px`
+</script>

@@ -1,0 +1,40 @@
+---
+import getImage from '../../lib/getImage'
+const { href, img, title, sectionHeight } = Astro.props
+---
+
+<a class="main" href={href} target="_blank">
+  <img class="image cover" src={(await getImage(img)).src} />
+  <p class="ellipsis" key-lang={title}></p></a
+>
+
+<style define:vars={{ sectionHeight }}>
+  .main {
+    user-select: none;
+    width: 100%;
+    background-color: var(--bg);
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--fg2);
+    display: grid;
+    grid-template-rows: calc(var(--sectionHeight) - 25px) 25px;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    gap: 0;
+    opacity: 0.9;
+    border: 2px solid var(--bg0_h);
+    box-shadow: -6px 6px var(--bg0_h);
+    transition:
+      transform 0.2s ease-in-out,
+      box-shadow 0.1s ease-in-out;
+  }
+  .main:hover {
+    transform: translateY(6px) translateX(-6px);
+    box-shadow: 0 0 var(--bg0_h);
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+</style>

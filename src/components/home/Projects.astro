@@ -1,0 +1,18 @@
+---
+import Grid from '../common/Grid.astro'
+import Sections from './SectionsGrid.astro'
+import Title from '../common/Title.astro'
+import projectsList from '../../data/projects.json'
+
+const sectionSize = '130px'
+---
+
+<Title title="title.projects" clss="hover-underline-right" />
+
+<Grid class="main" sectionWidth={sectionSize} sectionHeight={sectionSize}>
+  {
+    projectsList.map(async ({ href, img, title }) => (
+      <Sections href={href} img={img} title={title} sectionHeight={sectionSize} />
+    ))
+  }
+</Grid>

@@ -1,0 +1,24 @@
+---
+const { sizeButton, url, target = '_self' } = Astro.props
+---
+
+<a href={url} target={target}>
+  <slot />
+</a>
+
+<style define:vars={{ sizeButton }}>
+  a {
+    width: var(--sizeButton);
+    height: var(--sizeButton);
+    background: var(--bg);
+    border: 2px solid var(--bg0_s);
+    box-shadow: 4px 4px var(--bg0_h);
+    transition:
+      box-shadow 0.1s ease-in-out,
+      transform 0.2s ease-in-out;
+  }
+  a:hover {
+    box-shadow: 0 0 var(--bg0_s);
+    transform: translateY(4px) translateX(4px);
+  }
+</style>

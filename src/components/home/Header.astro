@@ -1,0 +1,21 @@
+---
+import Main from '../header/Main.astro'
+import Button from '../header/Button.astro'
+import { Icon } from 'astro-icon/components'
+
+import headerList from '../../data/header.json'
+
+const sizeButton = '35px'
+const sizeIcon = '31px'
+const iconColor = 'var(--fg2)'
+---
+
+<Main sizeButton={sizeButton}>
+  {
+    headerList.map(({ href, icon }) => (
+      <Button url={href} sizeButton={sizeButton} target="_blank">
+        <Icon name={icon} size={sizeIcon} color={iconColor} />
+      </Button>
+    ))
+  }
+</Main>

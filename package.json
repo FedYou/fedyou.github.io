@@ -1,15 +1,16 @@
 {
   "type": "module",
   "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1",
-    "vite": "^5.3.5"
+    "gh-pages": "^6.1.1"
   },
   "dependencies": {
-    "vite-plugin-html": "^3.2.2"
+    "astro": "^5.7.4",
+    "astro-icon": "^1.1.5"
   }
 }
