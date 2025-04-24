@@ -4,7 +4,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "publish": "pnpm build && pnpm run deploy"
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
