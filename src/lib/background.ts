@@ -49,12 +49,8 @@ function addElement({ x, y }: { x: number; y: number }) {
   element.style.userSelect = 'none'
   element.style.fontFamily =
     "system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif"
-  element.style.animationName = 'flicker'
-  element.style.animationTimingFunction = 'ease-in-out'
-  element.style.animationIterationCount = 'infinite'
 
   element.style.color = `var(--${randomColor()})`
-  element.style.animationDuration = 4 + Math.random() * 20 + 's'
   if (Math.round(Math.random() * 1) === 1) {
     element.style.left = x + 'px'
   } else {
