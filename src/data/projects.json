@@ -1,37 +1,12 @@
 [
   {
+    "href": "https://github.com/FedYou/dlp",
+    "img": "dlp.webp",
+    "title": "title.project.dlp"
+  },
+  {
     "href": "https://github.com/FedYou/bedcli",
     "img": "bedcli.webp",
     "title": "title.project.bedcli"
-  },
-  {
-    "href": "https://github.com/FedYou/xml-parser",
-    "img": "xml-parser.webp",
-    "title": "title.project.xmlParser"
-  },
-  {
-    "href": "https://github.com/FedYou/youfile",
-    "img": "youfile.webp",
-    "title": "title.project.youfile"
-  },
-  {
-    "href": "https://github.com/FedYou/youcache",
-    "img": "youcache.webp",
-    "title": "title.project.youcache"
-  },
-  {
-    "href": "https://github.com/FedYou/youtemp",
-    "img": "youtemp.webp",
-    "title": "title.project.youtemp"
-  },
-  {
-    "href": "https://github.com/FedYou/yswipe",
-    "img": "yswipe.webp",
-    "title": "title.project.yswipe"
-  },
-  {
-    "href": "https://github.com/FedYou/player",
-    "img": "player.webp",
-    "title": "title.project.player"
   }
 ]

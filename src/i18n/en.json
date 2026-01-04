@@ -3,10 +3,5 @@
   "profile.description": "Web developer and add-ons creator for Minecraft Bedrock Edition",
   "title.projects": "Projects",
   "title.project.bedcli": "BedCli",
-  "title.project.xmlParser": "Xml Parser",
-  "title.project.youfile": "YouFile",
-  "title.project.youcache": "YouCache",
-  "title.project.youtemp": "YouTemp",
-  "title.project.player": "Player",
-  "title.project.yswipe": "YSwipe"
+  "title.project.dlp": "DLP"
 }
