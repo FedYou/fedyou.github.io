@@ -3,5 +3,9 @@
   "profile.description": "Desarrollador web y creador de add-ons para Minecraft Bedrock Edition",
   "title.projects": "Proyectos",
   "title.project.bedcli": "BedCli",
-  "title.project.dlp": "DLP"
+  "title.project.dlp": "DLP",
+  "button.github": "Mi Github",
+  "button.youtube": "Mi Youtube",
+  "button.xbox": "Mi Xbox",
+  "button.instagram": "Mi Instagram"
 }

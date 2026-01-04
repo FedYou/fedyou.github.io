@@ -1,8 +1,8 @@
 ---
-const { sizeButton, url, target = '_self' } = Astro.props
+const { sizeButton, url, target = '_self', title } = Astro.props
 ---
 
-<a href={url} target={target}>
+<a href={url} target={target} title={title}>
   <slot />
 </a>
 

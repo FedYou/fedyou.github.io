@@ -6,8 +6,8 @@ import getImage from '../../lib/getImage'
   <div class="picture-main">
     <img src={(await getImage('profile.webp')).src} class="picture-content" />
   </div>
-  <p class="profile-name hover-underline-left" key-lang="profile.name"></p>
-  <p class="profile-description" key-lang="profile.description"></p>
+  <p class="profile-name hover-underline-left" key-lang="profile.name" title="profile.name"></p>
+  <p class="profile-description" key-lang="profile.description" title="profile.description"></p>
 </div>
 
 <style>

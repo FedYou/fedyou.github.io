@@ -3,7 +3,7 @@ const { title, clss = '' } = Astro.props
 ---
 
 <div class={clss}>
-  <h2 key-lang="title.projects"></h2>
+  <h2 key-lang={title} title={title}></h2>
 </div>
 
 <style>

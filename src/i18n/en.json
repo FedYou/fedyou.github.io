@@ -3,5 +3,11 @@
   "profile.description": "Web developer and add-ons creator for Minecraft Bedrock Edition",
   "title.projects": "Projects",
   "title.project.bedcli": "BedCli",
-  "title.project.dlp": "DLP"
+  "title.project.bedcli.description": "Minecraft bedrock creator cli (No maintenance)",
+  "title.project.dlp": "DLP",
+  "title.project.dlp.description": "Download Player",
+  "button.github": "My Github",
+  "button.youtube": "My Youtube",
+  "button.xbox": "My Xbox",
+  "button.instagram": "My Instagram"
 }

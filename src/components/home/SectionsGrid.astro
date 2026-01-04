@@ -3,7 +3,7 @@ import getImage from '../../lib/getImage'
 const { href, img, title, sectionHeight } = Astro.props
 ---
 
-<a class="main" href={href} target="_blank">
+<a class="main" href={href} target="_blank" title={title + '.description'}>
   <img class="image cover" src={(await getImage(img)).src} />
   <p class="ellipsis" key-lang={title}></p></a
 >

@@ -13,7 +13,7 @@ const iconColor = 'var(--fg2)'
 <Main sizeButton={sizeButton}>
   {
     headerList.map(({ href, icon }) => (
-      <Button url={href} sizeButton={sizeButton} target="_blank">
+      <Button url={href} sizeButton={sizeButton} target="_blank" title={'button.' + icon}>
         <Icon name={icon} size={sizeIcon} color={iconColor} />
       </Button>
     ))
