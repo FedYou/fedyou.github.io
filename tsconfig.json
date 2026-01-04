@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "module": "esnext"
+    "module": "esnext",
+    "allowSyntheticDefaultImports": true
   },
   "extends": "astro/tsconfigs/strict",
   "include": [".astro/types.d.ts", "**/*"],
