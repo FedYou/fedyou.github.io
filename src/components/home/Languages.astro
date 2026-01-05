@@ -1,0 +1,33 @@
+---
+import Title from '../common/Title.astro'
+import { Icon } from 'astro-icon/components'
+---
+
+<Title title="title.languages" clss="hover-underline-right" />
+
+<div>
+  <Icon name={'javascript'} size={80} class="icon" />
+  <Icon name={'typescript'} size={80} class="icon" />
+</div>
+
+<style>
+  div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 80px);
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .icon {
+    cursor: pointer;
+    border: 2px solid var(--bg0_h);
+    box-shadow: -6px 6px var(--bg0_h);
+    transition:
+      box-shadow 0.1s ease-in-out,
+      transform 0.2s ease-in-out;
+  }
+  .icon:hover {
+    transform: translateY(6px) translateX(-6px);
+    box-shadow: 0 0 var(--bg0_h);
+  }
+</style>
