@@ -7,15 +7,23 @@ const WORDS = JSON.words
 const CHARS = JSON.chars
 const COLORS = JSON.colors
 
-const ELEMENTS = WIDTH < 550 ? 300 : 600
+const ELEMENTS_TOTAL = 600
+const MIN_WIDTH_CHANGE = 725
 const MAX_WORDS = 20
 let WORDS_COUNT = 0
 
+const ELEMENTS_DISPLAY: HTMLElement[] = []
+
 const cont = document.getElementById('background') as HTMLElement
+
+function getPorcent(value: number, total: number) {
+  return (value / total) * 100
+}
+
 function randomPosition() {
   return {
-    x: Math.random() * WIDTH,
-    y: Math.random() * HEIGHT
+    x: getPorcent(Math.random() * WIDTH, WIDTH),
+    y: getPorcent(Math.random() * HEIGHT, HEIGHT)
   }
 }
 function randomWord() {
@@ -52,14 +60,35 @@ function addElement({ x, y }: { x: number; y: number }) {
 
   element.style.color = `var(--${randomColor()})`
   if (Math.round(Math.random() * 1) === 1) {
-    element.style.left = x + 'px'
+    element.style.left = x + '%'
   } else {
-    element.style.right = x + 'px'
+    element.style.right = x + '%'
   }
-  element.style.top = y + 'px'
+  element.style.top = y + '%'
   cont.appendChild(element)
+  return element
 }
 
-for (let x = 0; x < ELEMENTS; x++) {
+for (let x = 0; x < ELEMENTS_TOTAL; x++) {
+  if (x < 300) {
+    ELEMENTS_DISPLAY.push(addElement(randomPosition()))
+    continue
+  }
   addElement(randomPosition())
 }
+
+function eachDisplayElements(list: HTMLElement[], display: 'none' | 'block') {
+  list.forEach((element) => (element.style.display = display))
+}
+
+function update() {
+  if (document.body.offsetWidth < MIN_WIDTH_CHANGE) {
+    eachDisplayElements(ELEMENTS_DISPLAY, 'none')
+    return
+  }
+  eachDisplayElements(ELEMENTS_DISPLAY, 'block')
+}
+
+document.body.onresize = () => update()
+
+update()
