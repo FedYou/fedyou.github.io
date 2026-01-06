@@ -1,9 +1,6 @@
 ---
-import Title from '../common/Title.astro'
 import { Icon } from 'astro-icon/components'
 ---
-
-<Title title="title.languages" clss="hover-underline-right" />
 
 <div>
   <Icon name={'javascript'} size={80} class="icon" />
@@ -16,6 +13,7 @@ import { Icon } from 'astro-icon/components'
     grid-template-columns: repeat(auto-fit, 80px);
     gap: 10px;
     padding: 10px;
+    place-content: center;
   }
 
   .icon {
